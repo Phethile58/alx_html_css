@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    font-family: 'Roboto', sans-serif ;
 }
 
 main{
@@ -15,7 +16,29 @@ article{
     flex: 2;
     overflow-y: auto;
     padding: 1rem;
-    background-color: #0f0f0f;
+    background-color: #fffeff;
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article h2, article h3{
+    color: #c1440e;
+}
+
+article table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+article table, article th, article td{
+    border: 1px solid #ccc;
+}
+
+article th, article td{
+    padding: 0.5rem;
+    text-align: left;
 }
 
 side{
@@ -33,4 +56,25 @@ header, footer{
 
 *{
     box-sizing: border-box;
+}
+
+.logo{
+    font-size: 2rem;
+    padding-right: 1rem;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+header ul li{
+    margin-right: 15px;
+}
+
+a:hover{
+    color: #ff6347;
+    text-decoration: underline;
 }
