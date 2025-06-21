@@ -1,76 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>SmileSchool</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>SmileSchool</title>
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="CSS Advanced/logo.png" alt="logo">
+        <span>SmileSchool</span>
+      </div>
+      <ul>
+        <li><a href="#">COURSE</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">LOGIN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- This container holds the background image and EVERYTHING that goes on top of it -->
-    <div class="background-container">
-        <header>
-            <nav>
-                <img src="images/logo.png" alt="logo">
-                <ul>
-                    <li><a href="#">COURSES</a></li>
-                    <li><a href="#">PRICING</a></li>
-                    <li><a href="#">LOGIN</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!-- Hero "Get Schooled" Section -->
-            <section class="hero-section">
-                <div class="hero-content">
-                    <h1>Get schooled</h1>
-                    <div class="hero-keywords">
-                        <span>SMILES</span>
-                        <span>GRIN</span>
-                        <span>LAUGH</span>
-                    </div>
-                    <button class="btn-primary">REGISTER FOR FREE</button>
-                </div>
-            </section>
-
-            <!-- "Learn from the pros" Section -->
-            <section class="pros-section">
-                <h2>Learn from the pros</h2>
-                <div class="pros-grid">
-                    <div class="pro-card">
-                        <img src="images/1.png" alt="pro 1">
-                        <h3>Phillip Massey</h3>
-                        <p>« Smile of the year »<br>2018 - 2019</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="images/2.png" alt="pro 2">
-                        <h3>Nannie Lawrence</h3>
-                        <p>Best « little smile »<br>2017</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="images/3.png" alt="pro 3">
-                        <h3>Bruce Walters</h3>
-                        <p>Best « Friend Smile »<br>live performance 2019</p>
-                    </div>
-                    <div class="pro-card">
-                        <img src="images/4.png" alt="pro 4">
-                        <h3>Henry Hughes</h3>
-                        <p>« 24h smiles » winner<br>2016 - 2019</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-
-    <!-- The rest of your page content will go here, outside the background container -->
-    <!-- For example: -->
-    <section class="quote-section">
-        <!-- ... Quote content ... -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Get schooled</h1>
+        <p class="subheading">SMILES &nbsp; GRIN &nbsp; LAUGH</p>
+        <button class="register-bnt">REGISTER FOR FREE</button>
+      </div>
     </section>
-    
-    <!-- ... other sections ... -->
 
+    <!-- Learn from the pros -->
+    <section class="pros">
+      <h2>Learn from the pros</h2>
+      <div>
+        <div>
+          <img src="CSS Advanced/1.png" alt="Philip Massey">
+          <h3>Philip Massey</h3>
+          <p>« Smile of the year » 2018 - 2019</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/3.png" alt="Nannie Lawrence">
+          <h3>Nannie Lawrence</h3>
+          <p>Best « little smile » 2017</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/2.png" alt="Bruce Walters">
+          <h3>Bruce Walters</h3>
+          <p>Best « Friend Smile » live performance 2019</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/4.png" alt="Henry Hughes">
+          <h3>Henry Hughes</h3>
+          <p>« 24h smiles » winner 2016 - 2019</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote">
+      <div>
+        <img src="CSS Advanced/5.png" alt="image">
+      </div>
+      <div>
+        <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
+        <h3>Person NAME</h3>
+        <p>Weather presenter</p>
+      </div>
+    </section>
+
+    <!-- Most Popular Tutorials -->
+    <section class="popular">
+      <h2>Most popular tutorials</h2>
+      <div>
+        <!-- Tutorial Card 1 -->
+        <div>
+          <img src="CSS Advanced/6.png" alt="">
+          <h3>Diagonal Smile</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="CSS Advanced/1.png" alt="">
+            <h4>Philip Massey</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>8 min</p>
+        </div>
+        <!-- Repeat 3 more cards -->
+        <div>
+          <img src="CSS Advanced/9.png" alt="">
+          <h3>Happy Smile</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="CSS Advanced/1.png" alt="">
+            <h4>Philip Massey</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>8 min</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/8.png" alt="">
+          <h3>Natural Smile</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="CSS Advanced/1.png" alt="">
+            <h4>Philip Massey</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>8 min</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/7.png" alt="">
+          <h3>Sad Smile</h3>
+          <p>Lorem ipsum dolor sit amet...</p>
+          <div>
+            <img src="CSS Advanced/1.png" alt="">
+            <h4>Philip Massey</h4>
+          </div>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>8 min</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership -->
+    <section class="membership">
+      <h2>Free membership</h2>
+      <div>
+        <div>
+          <img src="CSS Advanced/smile.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/smile.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/smile.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <img src="CSS Advanced/smile.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+      <button>REGISTER FOR FREE</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+      <h2>F.A.Q</h2>
+      <div>
+        <div>
+          <h3>How does this work?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div>
+          <h3>How does this work?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div>
+          <h3>How does this work?</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+        <h3>How does this work?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <img src="CSS Advanced/logo.png" alt="logo">
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <p>© SmileSchool 2020</p>
+  </footer>
 </body>
 </html>
+
