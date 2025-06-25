@@ -31,4 +31,3 @@ This project aims to reinforce knowledge of:
 - Recreating UI from a visual reference
 
 ## 📂 File Structure
-

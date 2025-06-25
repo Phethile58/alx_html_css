@@ -1,0 +1,223 @@
+/* ========== Global Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6565;
+  --text-color: #071629;
+  --max-width: 1000px;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #071629;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* ========== Header ========== */
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 0;
+  background: transparent;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color:var(--text-color);
+ transition: color 0.3s ;
+  font-weight: bold;
+}
+
+/* ========== Hero ========== */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero .cta-btn {
+  background-color: #FF6565;
+  border: none;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.cta-btn:hover {
+  background: #e14e4e;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  opacity: 0.9;
+}
+
+/* What We Do Section */
+.what-we-do {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 60px;
+  color: #2e2e2e
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 200px;
+  max-width: 250px;
+  padding: 20px;
+}
+
+.feature i {
+  font-size: 3rem;
+  color: #FF6565;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.feature h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+/* Our Results Section */
+.our-results {
+  background-color: #071629;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.our-results .section-title {
+  color: #fff;
+}
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.result-item {
+  background: #fff;
+  color: #071629;
+  border-radius: 10px;
+  padding: 40px 20px;
+  min-width: 180px;
+  max-width: 200px;
+  flex: 1 1 150px;
+}
+
+.result-item h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #FF6565;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .cta-btn {
+    padding: 12px 25px;
+  }
+
+  .results-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
