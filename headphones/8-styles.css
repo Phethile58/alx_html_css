@@ -344,7 +344,34 @@ body {
   background-color: #071629;
   color: white;
   padding: 30px 20px;
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left img {
+  width: 120px;
+  height: auto
+}
+
+.footer-center {
   text-align: center;
+  flex: 1;
+}
+
+.footer-right .footer-social {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.footer-right .footer-social img {
+  width: 24px;
+  height: 24px;
 }
 
 .footer-links {
@@ -368,8 +395,13 @@ body {
 
 /* === Animations === */
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%, 100% { 
+    transform: scale(1);
+   }
+  50% {
+     transform: scale(1.05);
+     opacity: 0.9;
+     }
 }
 
 /* === Responsive === */
@@ -388,5 +420,20 @@ body {
     right: 20px;
     top: 70px;
     display: none;
+  }
+
+   .footer-layout {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-center {
+    order: 3;
+  }
+
+  .footer-left,
+  .footer-right {
+    order: 1;
   }
 }

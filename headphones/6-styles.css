@@ -193,44 +193,6 @@ img {
   color: white;
 }
 
-/* === Testimonials === */
-.testimonials {
-  background-color: #f7f7f7;
-  padding: 100px 20px;
-  text-align: center;
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
-}
-
-.testimonial-card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  object-fit: cover;
-}
-
-.testimonial-text {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-.testimonial-author {
-  font-weight: bold;
-}
-
 /* === Contact === */
 .contact {
   padding: 100px 20px;
